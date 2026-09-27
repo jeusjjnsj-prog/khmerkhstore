@@ -1,0 +1,7 @@
+{
+  "name": "Khmer Learning - រៀនជាមួយ",
+  "description": "វេទិកាសិក្សាដែលពេញនិយម - កម្មវិធីរៀនភាសាខ្មែរ និងមុខវិជ្ជាទូទៅ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

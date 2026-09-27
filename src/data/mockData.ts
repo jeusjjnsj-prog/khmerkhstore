@@ -1,0 +1,138 @@
+import { SubjectItem, LessonItem, MonthlyStat, UserProfile } from '../types';
+
+export const SUBJECTS_DATA: SubjectItem[] = [
+  {
+    id: 'literature',
+    titleKhmer: 'អក្សរសាស្ត្រ',
+    lessonCount: '120+ មេរៀន',
+    iconType: 'book',
+    color: '#D97706',
+  },
+  {
+    id: 'math',
+    titleKhmer: 'គណិតវិទ្យា',
+    lessonCount: '110+ មេរៀន',
+    iconType: 'calculator',
+    color: '#2563EB',
+  },
+  {
+    id: 'english',
+    titleKhmer: 'ភាសាអង់គ្លេស',
+    lessonCount: '100+ មេរៀន',
+    iconType: 'flag',
+    color: '#DC2626',
+  },
+  {
+    id: 'science',
+    titleKhmer: 'វិទ្យាសាស្ត្រ',
+    lessonCount: '95+ មេរៀន',
+    iconType: 'science',
+    color: '#16A34A',
+  },
+  {
+    id: 'tech',
+    titleKhmer: 'វិទ្យាសម្ព័ន្ធ',
+    lessonCount: '150+ មេរៀន',
+    iconType: 'tech',
+    color: '#9333EA',
+  },
+];
+
+export const LESSONS_DATA: LessonItem[] = [
+  {
+    id: 'khmer-lit',
+    titleKhmer: 'អក្សរសាស្ត្រ',
+    duration: '28:45',
+    lessonsCountText: '120+ មេរៀន',
+    isFree: true,
+    category: 'ភាសាខ្មែរ',
+    imageUrl: 'https://images.unsplash.com/photo-1570784499506-696328905fa8?auto=format&fit=crop&w=800&q=80',
+    description: 'សិក្សាស្វែងយល់អំពីកម្រងអក្សរសាស្ត្រខ្មែរ អក្សរសិល្ប៍ វេយ្យាករណ៍ និងវិធីសាស្ត្រតែងសេចក្តីយ៉ាងពិស្ដារ។',
+    rating: 4.9,
+    totalEnrolled: '4,520+',
+    instructor: 'លោកគ្រូ សុជាតិ វណ្ណឌី',
+    syllabus: [
+      { id: '1', title: 'សេចក្តីផ្តើមនៃអក្សរសាស្ត្រខ្មែរ', duration: '08:20', completed: true },
+      { id: '2', title: 'ច្បាប់កាព្យ និងរង្វាស់កាព្យ ៧ ពាក្យ', duration: '12:45', completed: true },
+      { id: '3', title: 'ការវិភាគតួអង្គក្នុងរឿងទុំទាវ', duration: '15:30', completed: false },
+      { id: '4', title: 'វិធីសាស្ត្រសរសេរតែងសេចក្តីពន្យល់', duration: '14:10', completed: false },
+    ],
+  },
+  {
+    id: 'math-general',
+    titleKhmer: 'គណិតវិទ្យា ថ្នាក់ទូទៅ',
+    duration: '32:10',
+    lessonsCountText: '110+ មេរៀន',
+    isFree: true,
+    category: 'គណិតវិទ្យា',
+    imageUrl: 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80',
+    description: 'មូលដ្ឋានគ្រឹះនៃពិជគណិត ធរណីមាត្រ ត្រីកោណមាត្រ និងដេរីវេ ជាមួយនឹងគន្លឹះដោះស្រាយលំហាត់ឆាប់រហ័ស។',
+    rating: 4.8,
+    totalEnrolled: '5,890+',
+    instructor: 'អ្នកគ្រូ ផល្លា ស្រីមុំ',
+    syllabus: [
+      { id: '1', title: 'អនុគមន៍ពហុធា និងការគូសក្រាប', duration: '10:15', completed: true },
+      { id: '2', title: 'លីមីតនៃអនុគមន៍ និងការគណនា', duration: '14:20', completed: true },
+      { id: '3', title: 'ដេរីវេ និងអនុវត្តន៍ក្នុងការរកអតិបរមា', duration: '16:40', completed: false },
+      { id: '4', title: 'លំហាត់ត្រៀមប្រឡងបាក់ឌុប', duration: '20:00', completed: false },
+    ],
+  },
+  {
+    id: 'english-comm',
+    titleKhmer: 'ភាសាអង់គ្លេស',
+    duration: '32:12',
+    lessonsCountText: '100+ មេរៀន',
+    isFree: true,
+    category: 'ភាសាអង់គ្លេស',
+    imageUrl: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=800&q=80',
+    description: 'អភិវឌ្ឍជំនាញទំនាក់ទំនងភាសាអង់គ្លេស វេយ្យាករណ៍ ការបញ្ចេញសំឡេងត្រឹមត្រូវ និងការស្តាប់យល់ជាក់ស្តែង។',
+    rating: 4.9,
+    totalEnrolled: '6,100+',
+    instructor: 'Mr. David & Teacher Sophea',
+    syllabus: [
+      { id: '1', title: 'Essential Daily Conversational English', duration: '09:40', completed: true },
+      { id: '2', title: 'Mastering English Tenses with Ease', duration: '15:20', completed: false },
+      { id: '3', title: 'Vocabulary Expansion for IELTS & Work', duration: '18:12', completed: false },
+    ],
+  },
+  {
+    id: 'science-lab',
+    titleKhmer: 'វិទ្យាសាស្ត្រ',
+    duration: '27:18',
+    lessonsCountText: '95+ មេរៀន',
+    isFree: false,
+    category: 'វិទ្យាសាស្ត្រ',
+    imageUrl: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80',
+    description: 'ពិសោធន៍គីមីវិទ្យា និងរូបវិទ្យាកម្រិតខ្ពស់ ការពន្យល់តាមគំរូ 3D ច្បាស់លាស់ និងការអនុវត្តជាក់ស្តែងក្នុងបន្ទប់ពិសោធន៍។',
+    rating: 5.0,
+    totalEnrolled: '3,240+',
+    instructor: 'សាស្រ្តាចារ្យបណ្ឌិត ចាន់ សារ៉េត',
+    syllabus: [
+      { id: '1', title: 'ប្រតិកម្មគីមីសរីរាង្គ និងសមាសធាតុ', duration: '11:30', completed: false },
+      { id: '2', title: 'ច្បាប់ចលនាញូតុន និងការអនុវត្ត', duration: '14:00', completed: false },
+      { id: '3', title: 'កម្ដៅ និងថាមពលក្នុងប្រព័ន្ធបិទជិត', duration: '12:45', completed: false },
+    ],
+  },
+];
+
+export const MONTHLY_STATS: MonthlyStat[] = [
+  { monthKhmer: 'មករា', percentage: 75 },
+  { monthKhmer: 'កុម្ភៈ', percentage: 60 },
+  { monthKhmer: 'មីនា', percentage: 80 },
+  { monthKhmer: 'មេសា', percentage: 68 },
+  { monthKhmer: 'ឧសភា', percentage: 90 },
+  { monthKhmer: 'មិថុនា', percentage: 70 },
+];
+
+export const USER_PROFILE: UserProfile = {
+  nameKhmer: 'សុវណ្ណ សំណាង',
+  email: 'sovan.somang@email.com',
+  isPremium: true,
+  avatarUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80',
+  lessonsCompleted: 24,
+  totalLessons: 35,
+  exercisesDone: 8,
+  totalExercises: 12,
+  score: 85,
+  percentile: 'Top 10%',
+};
